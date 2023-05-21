@@ -26,7 +26,7 @@
       );
     };
 
-    // Convierte el array json en un formato json
+    // Convierte el array en un formato string y lo guarda en la variable jsonString
     $jsonString = json_encode($json);
 
     // Devuelve jsonString

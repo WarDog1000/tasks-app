@@ -15,6 +15,7 @@
       <a href="#" class="navbar-brand">Tasks App</a>
       <form class="form-inline my-2 my-lg-0">
         <div class="d-flex align-items-center">
+          <!-- SEARCH TASKS -->
           <input type="search" id="search" class="form-control mr-sm-2 mx-2" placeholder="Search your Task">
           <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
         </div>
@@ -27,7 +28,8 @@
       <div class="col-md-5">
         <div class="card">
           <div class="card-body">
-            <form id="task-form">
+            <!-- ADD TASKS -->
+            <form id="tasks-form">
               <div class="mb-3">
                 <input class="form-control" type="text" id="name" placeholder="Task Name">
               </div>
@@ -40,6 +42,11 @@
         </div>
       </div>
       <div class="col-md-7">
+        <div class="card my-4" id="tasks-result">
+          <div class="card-body">
+            <ul id="container"></ul>
+          </div>
+        </div>
         <table class="table table-bordered table-sm">
           <thead>
             <tr>

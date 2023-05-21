@@ -9,7 +9,7 @@ $connection = mysqli_connect(
 
 // comprueba que existe lam coneccion con la base de datos
 if($connection) {
-  echo 'Database is connected successfully';
+  // echo 'Database is connected successfully';
 };
 
 ?>
