@@ -1,6 +1,6 @@
 <?php
 // Abre la coneccion con la base de datos
-  include('database.php');
+  include('connection/database.php');
 
   // Recibe el metodo POST con el valor de search y lo guarda en una variable del mismo nombre
   $search = $_POST['search'];

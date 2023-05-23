@@ -1,7 +1,7 @@
 <?php
 
 // Importa la coneccion a la base de datos
-  include('database.php');
+  include('connection/database.php');
 
   // Se guarda en una var 'id' el id que recibe desde el metodo post
   $id = $_POST['id'];

@@ -1,7 +1,7 @@
 <?php
 
   // Incluye la coneccion a la base de datos
-  include('database.php');
+  include('connection/database.php');
 
   // Comprueba que este recibiendo una propriedad 'name' desde el metodo POST
   if(isset($_POST['name'])) {

@@ -1,6 +1,6 @@
 <?php
   // Incluye la coneccion a la base de datos
-  include('database.php');
+  include('connection/database.php');
 
   // Crea una consulta
   $query = "SELECT * FROM tasks";

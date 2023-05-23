@@ -1,6 +1,6 @@
 <?php
   // Incluye la coneccion a la base de datos
-  include('database.php');
+  include('connection/database.php');
 
   // Si existe  del metodo post una propriedad 'id'
   if(isset($_POST['id'])) {

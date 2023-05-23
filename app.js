@@ -38,7 +38,7 @@ $(document).ready(function() {
     }
   })
 
-  // FUNCION PARA AGREGAR TAREAS
+  // FUNCION PARA AGREGAR Y/O ACTUALIZAR TAREAS
   $('#tasks-form').submit(function(e) {
     e.preventDefault()
     // console.log('submiting')
@@ -50,7 +50,8 @@ $(document).ready(function() {
     }
     // console.log(postData)
 
-    let url = edit === false ? 'add.php' : 'update.php'
+    let url = edit === false ? 'add.php' : 'update.php';
+
 
     // Utiliza el metodo POST de Jquery para enviar el elemento postData a la url dependiendo si lo agrega o actualiza
     $.post(url, postData, function(response) {
@@ -88,8 +89,10 @@ $(document).ready(function() {
     })
   }
 
-  // escucha el evento 'click' para los elementos button class 'task-delete
+
+  // FUNCION PARA ELIMINAR TAREAS
   $(document).on('click', '.task-delete', function(e) {
+    // escucha el evento 'click' para los elementos button class 'task-delete
     if(confirm('Are you sure you want to delete it?')) {
       // console.log('Task deleted')
       // console.log($(this))
@@ -107,8 +110,9 @@ $(document).ready(function() {
     }
   })
   
-  // escucha el evento 'click' para los elementos <a> class 'task-item'
+  // FUNCION PARA SELECCIONAR TARAEA
   $(document).on('click', '.task-item', function(e) {
+    // escucha el evento 'click' para los elementos <a> class 'task-item'
     e.preventDefault()
     // console.log('Click task item')
     // Obtiene el elemento padre del elemento padre
